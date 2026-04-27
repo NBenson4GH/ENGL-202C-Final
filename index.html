@@ -1,52 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Screen Time Management App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screen Time Management App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-    <h1>Screen Time Management</h1>
-    <p>Helping Teens Take Control of Social Media</p>
-</header>
+  <header class="hero">
+    <nav>
+      <h2>ScreenWise</h2>
+      <div>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#references">References</a>
+      </div>
+    </nav>
 
-<nav>
-    <a href="#problem">Problem</a>
-    <a href="#solution">Solution</a>
-    <a href="#features">Features</a>
-    <a href="#timeline">Timeline</a>
-</nav>
+    <section class="hero-content">
+      <h1>Social Media Addiction & How to Overcome It</h1>
+      <p>
+        A proposed screen time management app designed to help teenagers and parents
+        track usage, set limits, build healthier habits, and reduce harmful social media overuse.
+      </p>
+      <a href="#solution" class="button">View Our Solution</a>
+    </section>
+  </header>
 
-<section id="problem">
-    <h2>The Problem</h2>
-    <p>Teenagers today struggle with social media addiction, impacting mental health, sleep, and productivity.</p>
-</section>
+  <main>
 
-<section id="solution">
-    <h2>Our Solution</h2>
-    <p>A smart app that tracks screen time, sets limits, and encourages healthier habits.</p>
-</section>
+    <section id="problem" class="section">
+      <h2>The Problem</h2>
+      <p>
+        Social media has become a major part of teenage life, but many platforms are designed
+        to keep users engaged for long periods of time through personalized algorithms. This can
+        lead to unhealthy comparison, poor sleep, reduced attention span, anxiety, depression,
+        and lower academic performance.
+      </p>
 
-<section id="features">
-    <h2>Key Features</h2>
-    <ul>
-        <li>Screen time tracking</li>
-        <li>Usage analytics</li>
-        <li>App limits & locks</li>
-        <li>Goal setting</li>
-        <li>Reward system</li>
-    </ul>
-</section>
+      <div class="cards">
+        <div class="card">
+          <h3>Mental Health</h3>
+          <p>Excessive use may contribute to anxiety, depression, and negative self-comparison.</p>
+        </div>
+        <div class="card">
+          <h3>Sleep</h3>
+          <p>Late-night scrolling can disrupt sleep routines and reduce sleep quality.</p>
+        </div>
+        <div class="card">
+          <h3>Productivity</h3>
+          <p>Constant notifications and scrolling can make it harder for students to focus.</p>
+        </div>
+      </div>
+    </section>
 
-<section id="timeline">
-    <h2>Project Timeline</h2>
-    <p>Development completed in approximately 10–12 weeks.</p>
-</section>
+    <section id="solution" class="section alt">
+      <h2>Proposed Solution</h2>
+      <p>
+        Our proposed solution is a mobile application that helps teenagers monitor and manage
+        their social media use. The app tracks screen time, analyzes behavior patterns, sends
+        reminders, creates limits, and rewards users for healthier decisions.
+      </p>
 
-<footer>
-    <p>Created by Nick Benson & Aubrey Quinn</p>
-</footer>
+      <div class="feature-grid">
+        <div class="feature">Screen Time Tracking</div>
+        <div class="feature">Usage Analytics</div>
+        <div class="feature">App-Specific Limits</div>
+        <div class="feature">Temporary Lock System</div>
+        <div class="feature">Goal Setting</div>
+        <div class="feature">Reward System</div>
+      </div>
+    </section>
 
+    <section class="section">
+      <h2>Interactive Screen Time Estimator</h2>
+      <p>
+        Enter your daily social media use to estimate weekly screen time.
+      </p>
+
+      <div class="calculator">
+        <label for="hours">Hours per day:</label>
+        <input type="number" id="hours" min="0" max="24" placeholder="Example: 4" />
+        <button onclick="calculateScreenTime()">Calculate</button>
+        <p id="result"></p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2>Technical Specifications</h2>
+      <p>
+        The application would be developed for both iOS and Android. A framework such as
+        React Native could be used for the front end, while Firebase or Node.js could support
+        the back end. The app would include user authentication, screen tracking integration,
+        notification systems, data analytics, and privacy protections.
+      </p>
+    </section>
+
+    <section id="timeline" class="section">
+      <h2>Implementation Timeline</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Phase 1: Research</h3>
+          <p>2 weeks — Analyze user behavior and review existing research.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Phase 2: Design</h3>
+          <p>2 weeks — Create the user interface and app structure.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Phase 3: Development</h3>
+          <p>4–6 weeks — Build tracking, limits, reminders, and rewards.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Phase 4: Testing</h3>
+          <p>2 weeks — Beta test with students and fix issues.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Phase 5: Deployment</h3>
+          <p>1 week — Launch the app and collect user feedback.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2>Feasibility & Limitations</h2>
+      <p>
+        This solution is feasible because the technology needed for screen time tracking,
+        notifications, and app development already exists. However, limitations include users
+        ignoring notifications, disabling restrictions, or having privacy concerns. Because of this,
+        the app must be easy to use, secure, and motivating.
+      </p>
+    </section>
+
+    <section id="references" class="section">
+      <h2>References</h2>
+      <p>
+        This project is based on research from sources including Associated Clinic of Psychology,
+        Georgetown University, Undergraduate Journal of Public Health, Frontiers in Public Health,
+        and Weill Cornell Medicine.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Aubrey Quinn and Nick Benson | ENGL 202C Technical Writing</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
